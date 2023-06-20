@@ -24,6 +24,30 @@ public class Main {
 		final double rectangleArea = rectangle.getArea();
 
 		System.out.println("Area of this rectangle is: " + rectangleArea);
+
+		// Exercise 1: Abstract animal
+		System.out.println();
+
+		Dog dog = new Dog();
+		dog.makeSound();
+		dog.move();
+
+		Bird bird = new Bird();
+		bird.makeSound();
+		bird.move();
+
+		// Exercise 2: PaymentMethod Interface
+		System.out.println();
+
+		CreditCard creditCard = new CreditCard();
+		creditCard.processPayment(100);
+
+		PayPal payPal = new PayPal();
+		payPal.processPayment(200);
+
+		Cash cash = new Cash();
+		cash.processPayment(50);
+
 	}
 
 }
